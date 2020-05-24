@@ -1,0 +1,641 @@
+/*remove margins and paddings from the base element*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Roboto;
+}
+
+/*main section and top navigation background css*/
+.bg-image-container {
+    margin: 0 auto;
+    background-image: url(Path.png);
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      height: 100vh;
+      width: 100%;
+
+}
+ 
+  /* nav logo css */
+  .logo{
+    display: flex;
+    font-size: 30px;
+  }
+  
+  ul{
+      display: flex;
+      font-size: 25px;
+  }
+
+  a:hover {
+    color: #cccccc;
+  }
+
+  /* nav link css */
+  li{
+    padding: 10px 25px;
+    list-style: none;
+  }
+
+  a{
+      text-decoration: none;
+      color:#111B47;
+  }
+
+  /*navigation div css*/
+  .btn{
+      padding-top: 5px;
+      display: flex;    
+      opacity: 0.8;
+  }
+
+  #buy-now:hover {
+    opacity: 1;
+  }
+
+  nav{
+      display: flex;
+      justify-content: space-between;
+  }
+
+  /* navigati0n button css*/
+  .nav-btn{
+    padding: 0px 40px;
+    letter-spacing: 1px;
+    background-color: #111B47;
+  }
+
+  /* nav button tex css*/
+  #buy-now{
+      padding-right: 25px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 18px;
+      text-align: center;
+      color: #FFFFFF;
+  }
+
+ 
+/* clear float div*/
+  .clear-float{
+      clear: both;
+  }
+/* padding  to provide space after the navigation */
+  .main-section{
+      padding-top: 170px;
+      padding-left: 5px;
+  }
+
+  /*.main-section h1 css*/
+  .main-section-h1{    
+    font-weight: 100;
+    font-size: 50px;
+    line-height: 66px;
+    letter-spacing: 1px;
+    color: #091133;
+    margin-left: 35px;
+  }
+
+/*main section paragragh css --width set to 50% to take half of the div */
+  .main-section-article{
+      width: 50%;
+      font-size: 18px;
+      line-height: 30px;
+      color: #505F98;
+      padding-bottom: 30px;
+      margin-left: 35px;
+  }
+
+  /*purchase kit button tex css*/
+  #Purchase-kit-btn{
+    padding-right: 29px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  /* learn more button  text css*/
+  #learn-more-btn{
+    padding-left: 29px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: #111B47;
+  }
+
+  /* purchase kit button css*/
+  .Purchase-kit-btn{
+     padding: 5px 25px;
+     margin-left: 30px;
+     letter-spacing: 1px;
+     background-color: #111B47;
+  }
+
+  /* learn more button css*/
+  .learn-more-btn{
+    padding: 5px 20px;
+    margin-left: 30px;
+    letter-spacing: 1px;
+    background-color: gray;
+ }
+
+ /* main article button css-*/
+ .main-section-btn{
+     float: left;
+     width: 50%;   
+    padding: 0px;
+ }
+
+ /* general button css*/
+ button{
+     border-radius: 2px;
+     border-style: none;
+     cursor: pointer;
+ }
+/*main article width -- set to 100% to take up space available*/
+.article-section{
+    width: 100%;
+    margin: 0 auto;   
+    padding-top: 60px;
+}
+
+.first-section-h1{
+    width: 50%;
+    margin: 0 auto;     
+    float: left; 
+    margin-left: 35px;
+
+}
+
+
+/* general h1 css*/
+.article-section-h1{
+    font-weight: 100;
+    font-size: 35px;
+    line-height: 66px;
+    letter-spacing: 1px;
+    color: #091133;
+}
+
+/*second section article */
+.article-summary{
+    font-size: 18px;
+    line-height: 30px;
+    color: #505F98;
+    padding-bottom: 0px;
+    float: left;
+    margin-left: 35px;
+}
+/* second section grid css  */
+.card {
+    float: left;
+    width: 40%;
+    margin-right: 15px;
+  }
+  
+  .card-icon {
+    position: relative;
+  }
+  
+  /* card icon paragrah*/
+  .card-icon p {
+    position: absolute;
+    top: 90px;
+    width: 100%;
+    color: white;
+  }
+
+  .card-section{
+      margin-top: 20px;
+  }
+
+  .card-icon h4{
+    color: #091133 !important;   
+  }
+
+  /*second section css -- set to grid display to element inline*/
+  .article-container{
+    display: grid;
+    width: 100%;
+    grid-row-gap: 25px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  
+  .article-container .article-image .article-summary{
+      flex: auto;
+  }
+  .second-article-info{
+    display: grid;
+    width: 100%;
+    grid-row-gap: 25px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .second-article-info .image-article2 .text-article2 {
+      flex: auto;
+      justify-content: space-between;
+  }
+
+  .second-article-section{
+    width: 100%;
+    margin: 0 auto;   
+    padding-top: 40px;
+}
+
+/* css to set margin left and right for section 1 - 2*/
+.space-between{
+    margin: 0px 20px;
+}
+
+/*second article p css*/
+.second-article-info{
+    font-size: 18px;
+    line-height: 30px;
+    color: #505F98;
+    padding-bottom: 25px;
+}
+
+/* third section css --width set to 100% to take up available space*/
+.third-section{
+    width: 100%;
+    margin: 0 auto; 
+    padding-top: 40px;
+}
+
+.third-article-info{
+    display: grid;
+    width: 100%;
+    grid-row-gap: 25px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.third-article-info .image-article3 .text-article3 {
+    flex: auto;
+}
+
+
+.third-article-info{
+    font-size: 18px;
+    line-height: 30px;
+    color: #505F98;
+    padding-bottom: 25px;
+}
+
+/*fourth section css --width set to 100% to take up available space*/
+.fourth-section{
+    width: 100%;
+    margin: 0 auto; 
+    padding-top: 40px;
+}
+
+.fourth-article-info{
+    display: grid;
+    width: 100%;
+    grid-row-gap: 25px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.fourth-article-info .image-article4 .text-article4 {
+    flex: auto;
+}
+
+.fourth-article-info{
+    font-size: 18px;
+    line-height: 30px;
+    color: #505F98;
+    padding-bottom: 25px;
+}
+
+/* price section css begins here*/
+.price-section{
+    background-image: url(footer-img.png);
+    background-size: 100% 100%; /*size set to 100% twicw to fit image to the whole div*/
+      background-repeat: no-repeat;
+      height: 100vh;
+      width: 100%;
+}
+
+/* pricing detail css*/
+.price{
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+    color: #505F98;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.dollar{
+    margin-top: -25px;
+}
+
+.pricing-btn{
+    margin-top: 25px;
+}
+/*footer button css*/
+.pricing{
+    padding: 5px 30px;
+     letter-spacing: 1px;
+     background-color: #111B47;
+}
+
+/*footer button text css*/
+#btn-price{
+    padding-right: 29px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.text-article-4 button{
+    margin-top: 20px;
+}
+
+/* footer css begins here*/
+footer{
+    background-color: rgb(231, 236, 255);
+    height: 23vh;
+}
+
+.font-logo{
+    font-size: 20px;
+}
+#logo{
+    font-size: 30px;
+}
+/** foorter css for top section with logo and button*/
+.site-summary{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+}
+
+/* css to create border between footer top section and lower section*/
+.border-line{
+    border-bottom: 0.3px solid gray;
+    margin: 0px 10px;
+}
+
+/* css for footer lower section*/
+.contact-details{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 15px;
+}
+/* footer nav element css*/
+.nav-footer{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-footer p{
+    margin: 0px 10px;
+    font-size: 25px;
+}
+
+/*footer contact links css*/
+.contact-links{
+    display: flex;
+}
+/**footer links css*/
+.contact-details a{
+    margin: 0px 10px;;
+}
+
+.contact-links{
+    font-size: 25px;
+  
+    /* screens with maximum of 925px css*/
+}
+@media(max-width: 925px){
+    .price h1{
+        font-size: 25px;
+    }
+
+    .Purchase-kit-btn{
+        padding: 5px 30px;
+        margin: 0px 40px;  
+     }
+   
+     /* learn more button css*/
+     .learn-more-btn{
+       margin: 20px 60px;
+    }
+
+    .main-section h1{
+        margin-top: 10px;
+    }
+
+    .first-section-h1{
+      float: left;
+      width: 60%;
+    }
+
+    /* navigation button */
+    .nav-btn{
+        padding: 10px 40px;
+    }
+  
+}
+/* css applied to screens with maximum of 680px  */
+@media(max-width: 680px){
+    body{
+        width: 100%;
+    }
+
+    /* css for elements inside the background image except navigation*/
+    .main-section{
+        width: 100%;
+        margin-top: -130px;
+    }   
+
+    /* first section set to flex column */
+    .article-container{
+        display: flex;
+       flex-direction: column;
+       flex-direction: column-reverse;
+      }
+
+      .article-container .article-image .article-summary{
+        margin: 0 auto;
+        justify-content: center;
+        
+    }
+
+    /* second section setn to flex column*/
+    .second-article-info{
+        display: flex;
+       flex-direction: column;
+       justify-content: center;
+      }
+    
+      .second-article-info .image-article2 .text-article2 {
+        margin: 0 auto;
+        justify-content: center;
+      }
+      
+      /* third section set to flex column*/
+      .third-article-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .third-article-info .image-article3 .text-article3 {
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    /* third section set to flex column*/
+    .fourth-article-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .fourth-article-info .image-article4 .text-article4 {
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    /* footer contact details */
+    .contact-details{
+        display: flex;
+       flex-direction: column;
+    }
+
+    .contact-details .contact-links{
+        margin: 20px 0px;
+    }
+
+    /* footer site summary*/
+    .site-summary{
+        display: flex;
+        flex-direction: column;
+        padding: 40px 20px;
+        text-align: center;
+        height: 100%;
+        justify-content: space-between;
+    }
+
+    /* footer contact links */
+    .contact-links{
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        
+    }
+
+    /* footer navigation links*/
+    .nav-footer{
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;       
+    }
+
+    /* footer height set to 100% to take up all available spaces*/
+    footer{
+        height: 100%;
+    }
+
+    /* price section css begins here*/
+    .price-section{
+        height: 100%;
+    }
+
+    .site-summary p{
+        margin: 10px 0px;
+    }
+
+    .site-summary button{
+        margin: 10px 120px;
+    }
+
+    .price-section button{
+        margin: 10px 70px;
+    }
+
+    /*navigation ul set to flex column dispaly*/
+    ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* navigation button set to flex column */
+    .btn{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*pricing section h1*/
+    .price h1{
+        font-size: 20px;
+    }
+
+    /* main section button*/
+    .main-section-btn{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Purchase-kit-btn{
+        padding: 5px 30px;
+        margin: 0px 40px;  
+     }
+   
+     /* learn more button css*/
+     .learn-more-btn{
+       margin: 20px 60px;
+    }
+
+    /*first section h1 width set to 100% to take up the available space*/
+    .first-section-h1{
+      width: 100%;
+    }
+
+    .article-container{
+        margin-left: 10px;
+    }
+    
+
+}
+
+/*screens with minimum width of 360px*/
+@media(min-width: 360px){
+    body{
+        width: 100%;
+    }
+    
+    .article-container{
+        margin-left: -10px;
+    }
+
+    .main-section{
+        margin-left: -15px;
+    }
+
+    .main-section-btn{
+        width: 70%;
+    }
+
+    .first-section-h1{
+        width: 80%;
+      }
+
+      .site-summary button{
+        margin: 10px 60px;
+    }
+}
